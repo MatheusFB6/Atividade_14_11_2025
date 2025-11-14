@@ -1,0 +1,31 @@
+# Projeto Middleware Web Service com Criptografia
+
+## 1. Descrição do Projeto 
+
+Este projeto é um Middleware Web Service desenvolvido para atender aos requisitos de um exercício acadêmico. Ele atua como uma interface segura entre clientes externos (Web/Mobile) e um sistema legado interno que processa apenas XML. 
+
+O middleware expõe uma API REST/RESTful , recebe dados em JSON , converte-os para XML , criptografa dados sensíveis (CPF) usando AES , e interage com um sistema legado simulado . Ele também implementa autenticação via API Key e descriptografa as respostas do legado antes de devolvê-las ao cliente. 
+
+## 2. Tecnologias Utilizadas 
+
+* **Linguagem:** Python 3
+* **Framework API:** FastAPI
+* **Validação de Dados:** Pydantic
+* **Criptografia:** Biblioteca `cryptography` (implementação Fernet/AES) 
+* **Servidor ASGI:** Uvicorn (para execução)
+
+## 3. Passo a Passo para Executar o Projeto 
+
+**Pré-requisitos:**
+* Python 3.8+
+* `pip` (gerenciador de pacotes)
+
+**1. Clone o Repositório (ou salve os arquivos):**
+
+Salve os arquivos `middleware_api.py`, `crypto_utils.py` e `legacy_system.py` em um mesmo diretório.
+
+**2. Crie e Ative um Ambiente Virtual (Recomendado):**
+
+```bash
+python -m venv venv
+source venv/bin/activate  # No Windows: .\venv\Scripts\activate
