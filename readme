@@ -2,7 +2,7 @@
 
 ## 1. Descrição do Projeto 
 
-Este projeto é um Middleware Web Service desenvolvido para atender aos requisitos de um exercício acadêmico. Ele atua como uma interface segura entre clientes externos (Web/Mobile) e um sistema legado interno que processa apenas XML. 
+Este projeto é um Middleware Web Service desenvolvido para atender aos requisitos do exercício. Ele atua como uma interface segura entre clientes externos (Web/Mobile) e um sistema legado interno que processa apenas XML. 
 
 O middleware expõe uma API REST/RESTful , recebe dados em JSON , converte-os para XML , criptografa dados sensíveis (CPF) usando AES , e interage com um sistema legado simulado . Ele também implementa autenticação via API Key e descriptografa as respostas do legado antes de devolvê-las ao cliente. 
 
